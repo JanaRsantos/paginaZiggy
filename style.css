@@ -1,0 +1,91 @@
+html {
+    height: 100%; /*altura da página*/
+}
+
+html, body { /*tirar as masgens e mudar a cor de fundo da página*/
+    margin: 0;
+    padding: 0;
+    background: #000;
+}
+
+body { 
+    background-color: #FFA3E4; /*cor de fundo do body*/
+    min-height: 100%; /*altura minima*/
+    display: flex; /*posição e alinhamento*/
+    flex-direction: column;
+    text-align: center; /*centralizar conteúdo*/
+}
+
+main { 
+    flex: 1;
+    padding-top: 60px;
+}
+
+.navbar {
+    background-color: #6150FA;
+}
+
+.navbar-brand { /*Barra de navegação: definição da fonte, tamanho, negrito */
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+.d-inline-block { /*arredondar bordas da imagem*/
+    border-radius: 50%;
+}
+
+.nav-link { /*Links de navegação da barra superior: definição da fonte, tamanho, negrito*/
+    font-size: 20px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+}
+
+h1 { /*Título principal da página: definição da fonte, tamanho, negrito e cor*/
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+    color: #6150FA;   
+}
+
+.w-50 { /*arredondar bordas da imagem*/
+    border-radius: 50%;
+}
+
+#texto { /*Tags <p> ajuste de texto*/
+    text-align: justify; /*justificar o texto*/
+    text-indent: 50px; /*identação do parágrafo*/
+    margin-top: 20px; /*margem superior*/
+    font-family: 'amatic SC', sans-serif; /*tipo da fonte*/
+    font-size: x-large; /*tamanho da fonte*/
+}
+
+#grid { /*definir o estilo do mosaico*/ 
+    display : grid; /*definir o display como grid*/
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /*define o tamanho das imagens linha/horizontal*/
+    grid-auto-rows: minmax(250px, auto); /*define o tamanho das imagens coluna/vertical*/
+    grid-auto-flow: dense; /*preenche buracos de posicionamento*/
+    column-gap: 0.5em; /*espaçamento colunas*/
+    row-gap: 0.5em; /*espaçamento linhas*/
+    margin: 20px 0 0 0; /*margem da grid*/
+}
+
+#grid img {
+    width: 100%; /*largura da imagem*/
+    height: 100%; /*altura da imagem*/
+    object-fit: cover; /*redimensionamento na imagem*/
+    border-radius: 10px; /*arredondamento das bordas*/
+}
+
+#btn-enviar {
+    background-color: #6150FA;
+    border: none;
+}
+
+.footer { /*Rodapé da página*/
+    background-color: #6150FA; /*Cor de fundo*/
+    color: white; /*cor da fonte*/
+    width: 100%; /*largura do rodapé*/
+    text-align: center; /*alinhamento do texto*/
+    margin-top: 1.5rem; /*margem superior*/
+}
